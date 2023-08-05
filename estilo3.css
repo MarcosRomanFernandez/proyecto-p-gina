@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Playfair+Display&family=Roboto+Serif:opsz@8..144&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: sans-serif;
+    background-image: linear-gradient(140deg, rgb(42, 42, 116), rgb(54, 3, 3)75%, rgba(3, 3, 68, 0.925));
+    min-height: 100vh;
+}
+
+.responsive-container {
+    display: none;
+}
+
+.container{
+    min-width: 400px;
+    width: 90%;
+    margin: auto;
+    padding: 4.5em 3em;
+    line-height: 40px;
+    border: 2px solid #ffffffc0;
+    border-radius: 10px;
+    box-shadow: 0 5px 100px -5px rgb(255 255 255 / 30%);
+    text-align: center;
+}
+
+.form__container {
+    display: grid;
+    gap: 10px;
+}
+
+.form__group .responsive__input {
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 5px 0;
+    margin: 0;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__label {
+    position: absolute;
+    cursor: pointer;
+    color: #ffffffc0;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, rgb(60, 112, 255) .3s;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.responsive__input:focus + .form__label,
+.responsive__input:valid + .form__label{
+    transform: translateY(-12px) scale(.8);
+    transform-origin: top left;
+    color: #ffffff;
+}
+
+.form__line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.responsive__input::placeholder {
+    color: #ffffffc0;
+}
+
+.icons{
+    position: absolute;
+    right: 8px;
+    bottom: 20px;
+    font-size: 17px;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.responsive__remember-me{
+    font-weight: 600;
+    text-align: left;
+    color: #ffffffc0;
+}
+
+.link__facebook, .link__google {
+    background-color: #fff;
+    padding: 0 5px;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .link__google {
+    color: #d90a0a;
+  }
+
+  .link__facebook{
+    color: #2363ff;
+  }
+
+.responsive__submit {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: #ffffffc0;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.container__a {
+    font-weight: 400;
+}
+
+.header__1{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.container__label {
+    color: #fff;
+}
+
+.responsive__input::-ms-reveal {
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 5px 100px -5px rgb(255 255 255 / 30%);
+  }
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        background-image: linear-gradient(140deg, rgb(42, 42, 116), rgb(54, 3, 3)75%, rgba(3, 3, 68, 0.925));
+        min-height: 100vh;
+    }
+    
+    .container {
+        display: none;
+    }
+    
+    .responsive-container {
+        display: block;
+        min-width: 200px;
+        width: 90%;
+        margin: 20px auto 20px auto;
+        padding: 4.5em 3em;
+        line-height: 40px;
+        border: 2px solid #ffffffc0;
+        border-radius: 8px;
+        box-shadow: 0 5px 100px -5px rgb(255 255 255 / 30%);
+        text-align: center;
+    }
+
+    .responsive__remember-me label .remember-me [type="checkbox"] {
+        background-color: transparent;
+        border: 4px solid #ffffff;
+    }
+
+    .form__container-responsive{
+        display: grid;
+        gap: 10px;
+    }
+
+    .responsive__group {
+        position: relative;
+    }
+
+    .responsive__remember-me{
+        text-align: left;
+        color: #ffffffc0;
+    }
+
+    .icons{
+        position: absolute;
+        right: 8px;
+        bottom: 20px;
+        color: #ffffff;
+        pointer-events: none;
+    }
+
+    .form__input::-ms-reveal {
+        color: red;
+      }
+      
+    
+    h1 {
+        font-size: 40px;
+        font-weight: 800;
+        color: #ffffffc0;
+        padding: 0 0 30px 0;
+    }
+    
+    .responsive__group .form__label{
+        font-size: 14px;
+        color: #ffffffc0;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    label,label .link {
+        font-size: 17px;
+        color: #ffffffc0;
+    }
+    
+    .submit {
+        display: block;
+        background-color: transparent;
+        color: #ffffffc0;
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form__input:focus + .form__label,
+    .form__input:valid + .form__label{
+        transform: translateY(-12px) scale(.9);
+        transform-origin: top left;
+    }
+    .form__input {
+        align-self: center;
+        width: 100%;
+        height: 50px;
+        padding: 0 30px 0 5px;
+        background-color: transparent;
+        border-color: #ffffff;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #ffffff;
+        transform: 
+        tranform .5s, rgb(60, 112, 255) .3s;
+        border: none;
+        outline: none;
+    }
+
+    .form__input::placeholder {
+        color: #ffffffc0;
+    }
+    
+    .form__input::-ms-reveal {
+        background-color: rgb(255, 255, 255);
+        border: 4px solid #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 5px 100px -5px rgb(255 255 255 / 30%);
+      }
+
+      .link__facebook, .link__google {
+        background-color: #fff;
+        padding: 0 5px;
+        width: 100%;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+
+      .link__google {
+        color: #d90a0a;
+      }
+
+      .link__facebook{
+        color: #2363ff;
+      }
+
+      .icon{
+        font-size: 1.3em;
+      }
+      
+}
+@media only screen and (max-width: 360px) {
+    .responsive-container{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}
+
+
+

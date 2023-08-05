@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registrarse</title>
+	<link rel="stylesheet" type="text/css" href="estilo2.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="https://kit.fontawesome.com/7f44eefc0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="form-container">
+		<form class="form">
+			<h1>Registrarse</h1>
+			<div class="form__section">
+				<input type="text" class="form__input" placeholder=" " required>
+				<label class="placeholder">Escriba su usuario</label>
+				<span class="icon fa-solid fa-user"></span>
+				<span class="form__line"></span>
+			</div>
+			<div class="form__section">
+				<input type="email" class="form__input" placeholder=" " required>
+				<label class="placeholder">Escriba su email</label>
+				<span class="icon fa-solid fa-envelope"></span>
+				<span class="form__line"></span>
+			</div>
+			<div class="form__section">
+				<input type="password" id="password" class="form__input" placeholder=" " required>
+				<span class="icon fa-solid fa-lock"></span>
+				<label class="placeholder">Escriba su contraseña</label>
+				<span class="form__line"></span>
+			</div>
+			<div class="form__section">
+				<label>
+					<input type="radio" name="Genero" value="Masculino">Masculino
+				</label>
+				<label>
+					<input type="radio" name="Genero" value="Femenino">Femenino
+				</label>
+			</div>
+			<div class="form__section">
+				<label>Colores:</label>
+				<label>
+					<input type="checkbox" class="checkbox" name="color" value="Rojo">Rojo</label>
+				<label>
+					<input type="checkbox" class="checkbox" name="color" value="Rosa">Rosa</label>
+				<label>
+					<input type="checkbox" class="checkbox" name="color" value="Azul">Azul</label>
+				<label>
+					<input type="checkbox" class="checkbox" name="color" value="Violeta">Violeta</label>
+			</div>
+			<div class="register">
+				<a href="#" class="register-facebook">Registrate con Facebook
+					<span class="facebook fa-brands fa-facebook"></span>
+				</a>
+			</div>
+			<div class="form__section">
+				<input type="submit" class="form__input submit">
+			</div>
+			<div class="container__a">
+				<a class="link" href="iniciar.html" target="_blank">Iniciar sesión</a>
+			</div>
+	</div>
+</body>
+</html>
